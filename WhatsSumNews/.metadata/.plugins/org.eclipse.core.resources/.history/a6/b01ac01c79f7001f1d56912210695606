@@ -1,0 +1,16 @@
+package com.WhatsSumNews.Mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.WhatsSumNews.dto.Comment;
+
+@Mapper
+public class CommentMapper {
+	    List<Comment> findAll();
+	    void insertComment(Comment comment);
+	    void deleteComment(int id);
+	    void updateComment(int id,String content);
+	}
+}

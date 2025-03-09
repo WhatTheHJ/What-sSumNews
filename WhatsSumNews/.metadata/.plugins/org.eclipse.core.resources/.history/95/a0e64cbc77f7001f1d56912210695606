@@ -1,0 +1,5 @@
+package com.WhatsSumNews.Controller;
+
+public class CommentController {
+
+}

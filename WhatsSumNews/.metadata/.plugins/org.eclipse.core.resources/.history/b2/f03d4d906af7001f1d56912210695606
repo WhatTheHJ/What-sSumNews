@@ -1,0 +1,23 @@
+package com.WhatsSumNews.Controller;
+
+import org.springframework.web.bind.annotation.*;
+
+import com.WhatsSumNews.Service.NYTService;
+import com.WhatsSumNews.dto.NYTResponse;
+
+@RestController
+@RequestMapping("/nyt")
+@CrossOrigin(origins = "http://localhost:3000") //cors오류방지
+public class NYTController {
+    private final NYTService nytService;
+
+    public NYTController(NYTService nytService) {
+        this.nytService = nytService;
+    }
+
+    @GetMapping("/articles/{period}")
+    public NYTResponse getArticles(@PathVariable("period") int period) {
+        return nytService.fetchArticles(period);
+    }
+}
+
