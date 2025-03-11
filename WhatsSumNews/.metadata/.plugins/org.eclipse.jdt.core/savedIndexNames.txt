@@ -32,6 +32,7 @@ INDEX VERSION 1.131+C:\Gitpersonal\WhatsSumNews\WhatsSumNews\.metadata\.plugins\
 4122594042.index
 357867819.index
 3884601328.index
+1865797976.index
 2746381062.index
 2116718969.index
 144392012.index
