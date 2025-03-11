@@ -1,9 +1,0 @@
-package com.WhatsSumNews.dto;
-
-@data
-public class Comment {
-	private int commentId;
-	private int createAt;
-	private String content;
-
-}
